@@ -1,25 +1,60 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xxZ-w9-Dgu">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="aeX-tR-X4C">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="xxZ-w9-Dgu" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="f81-Id-afT"/>
+                        <viewControllerLayoutGuide type="bottom" id="cbE-3p-O7C"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="aC1-F2-XH3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hpx-Rk-k5D">
+                                <rect key="frame" x="161" y="207" width="278" height="197"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="197" id="85l-U9-rEq"/>
+                                    <constraint firstAttribute="height" constant="190" id="OME-Yl-4PH"/>
+                                    <constraint firstAttribute="width" constant="278" id="qed-I8-kHA"/>
+                                    <constraint firstAttribute="width" constant="148" id="vgX-lQ-6FB"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="OME-Yl-4PH"/>
+                                        <exclude reference="vgX-lQ-6FB"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hpx-Rk-k5D" firstAttribute="top" secondItem="f81-Id-afT" secondAttribute="bottom" id="1Bb-1i-wsA"/>
+                            <constraint firstAttribute="centerY" secondItem="hpx-Rk-k5D" secondAttribute="centerY" constant="-5.5" id="RAN-Ss-lHN"/>
+                            <constraint firstAttribute="centerX" secondItem="hpx-Rk-k5D" secondAttribute="centerX" id="aEC-AI-KCp"/>
+                            <constraint firstItem="hpx-Rk-k5D" firstAttribute="leading" secondItem="aC1-F2-XH3" secondAttribute="leadingMargin" id="dWx-oS-GEa"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="1Bb-1i-wsA"/>
+                                <exclude reference="dWx-oS-GEa"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="imageview" destination="hpx-Rk-k5D" id="zeM-GP-dyb"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q57-cY-Dgu" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="225" y="283"/>
         </scene>
     </scenes>
 </document>
